@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - NILA THE LOOM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>NILA THE LOOM</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <section class="checkout">
+    <h2>Checkout</h2>
+    <form id="checkoutForm">
+      <label>Full Name:</label><br>
+      <input type="text" required><br><br>
+      <label>Email:</label><br>
+      <input type="email" required><br><br>
+      <label>Address:</label><br>
+      <textarea required></textarea><br><br>
+      <label>Phone:</label><br>
+      <input type="tel" required><br><br>
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <script>
+    const form = document.getElementById('checkoutForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Order placed successfully! ✅');
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>
