@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NILA THE LOOM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>NILA THE LOOM</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#cart">Cart</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h2>Traditional & Modern Handloom Products</h2>
+    <p>Quality fabrics | Fast delivery</p>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="products">
+    <div class="product">
+      <img src="assets/images/product1.jpg" alt="Product 1">
+      <h3>Handloom Saree</h3>
+      <p>₹1200</p>
+      <button onclick="addToCart('Handloom Saree',1200)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="assets/images/product2.jpg" alt="Product 2">
+      <h3>Handloom Shirt</h3>
+      <p>₹800</p>
+      <button onclick="addToCart('Handloom Shirt',800)">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- CART -->
+  <section id="cart" class="cart">
+    <h2>Cart</h2>
+    <ul id="cartItems"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
